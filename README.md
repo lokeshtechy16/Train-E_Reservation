@@ -64,27 +64,6 @@ To run the Train Booking System, follow these steps:
 - **Cancellation and Refunds**: Process booking cancellations and manage refunds.
 - **Audit Logging**: Track important actions and system events for auditing.
 
-## Sample Queries
-
-1. Retrieve all users:
-    ```sql
-    SELECT * FROM Users_info;
-    ```
-
-2. Find available trains between stations:
-    ```sql
-    SELECT * FROM Trains_Info WHERE Orgin_station = 'Ambli Road' AND Destination_station = 'Vadodara';
-    ```
-
-3. Get booking details for a specific user:
-    ```sql
-    SELECT * FROM Booking_Info WHERE Passenger_id = (SELECT Passenger_id FROM Passenger_info WHERE user_id = 111);
-    ```
-
-4. Audit log actions performed by a specific user:
-    ```sql
-    SELECT * FROM Audit_log WHERE User_id = 113;
-    ```
 
 ## Future Enhancements
 
